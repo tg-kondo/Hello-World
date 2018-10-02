@@ -1,3 +1,3 @@
 # Hello-World
 
-##GitHubテスト勉強用です。
+## GitHubテスト勉強用です。

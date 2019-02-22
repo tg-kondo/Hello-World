@@ -85,6 +85,7 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes  -out rsa_cert
 
 ## BigQuery の準備
 ぷプロジェクトのBigQueryからデータセット（iot）作成し、以下Jsonファイルを用意して以下のコマンドを実行する。
+※コマンド（環境に合わせて「toyota-edge-tpu-dev」は書き換える）
 
 <details><summary>jsonコード</summary><div>
 
@@ -135,10 +136,6 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes  -out rsa_cert
 ]
 ```
 </div></details>
-
-
-
-※コマンド（環境に合わせて「toyota-edge-tpu-dev」は書き換える）
 
 ```
 bq mk --table toyota-edge-tpu-dev:iot.edge schema.json

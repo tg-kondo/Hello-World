@@ -93,7 +93,7 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes  -out rsa_cert
 
 <details><summary>jsonコード</summary><div>
 
-\```schema.json
+```schema.json
 [
 {
 "description": "",
@@ -138,7 +138,7 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes  -out rsa_cert
 "mode": "NULLABLE"
 }
 ]
-\```
+```
 </div></details>
 
 

@@ -1,8 +1,3 @@
-# Hello-World
-
-## GitHubテスト勉強用です。
-
-
 # Edge TPU ドライブレコーダー システム
 Edge TPU と IoT Core を組み合わせて端末ごとのドライブレコーダーの情報を保存。
 
@@ -93,57 +88,57 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes  -out rsa_cert
 
 <details><summary>jsonコード</summary><div>
 
-```schema.json
+\schema.json
 [
     {
         "description": "",
         "name": "date",
-"type": "TIMESTAMP",
-"mode": "NULLABLE"
-},
-{
-"description": "",
-"name": "jsondata",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"description": "",
-"name": "longitude",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"description": "",
-"name": "latitude",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"description": "",
-"name": "meta",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"description": "",
-"name": "feature",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"description": "",
-"name": "deviceId",
-"type": "STRING",
-"mode": "NULLABLE"
-}
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "description": "",
+        "name": "jsondata",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "description": "",
+        "name": "longitude",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "description": "",
+        "name": "latitude",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "description": "",
+        "name": "meta",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "description": "",
+        "name": "feature",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "description": "",
+        "name": "deviceId",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
 ]
-```
+\
 </div></details>
 
 
 
-- コマンド（環境に合わせて「toyota-edge-tpu-dev」は書き換える）
+※コマンド（環境に合わせて「toyota-edge-tpu-dev」は書き換える）
 
 ```
 bq mk --table toyota-edge-tpu-dev:iot.edge schema.json

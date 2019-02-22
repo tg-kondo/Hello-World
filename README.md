@@ -95,9 +95,9 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem -nodes  -out rsa_cert
 
 ```schema.json
 [
-{
-"description": "",
-"name": "date",
+    {
+        "description": "",
+        "name": "date",
 "type": "TIMESTAMP",
 "mode": "NULLABLE"
 },
